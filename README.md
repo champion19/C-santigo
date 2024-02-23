@@ -1,0 +1,1 @@
+para iniciar un archivo .c:1.create a new file 2.Once you are there, write #include <stdio.h> add int main(){ return 0;} 3. to compile the file use gcc filename.c -o filename.out 4.to execute the file use: ./fiename.out 
