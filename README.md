@@ -1,50 +1,78 @@
-# to clone the repository
+# Structure in C language
 
+## Overview
+In this project, we are surfacing with the basic functions in the language C.
+
+## Get Started with C
+1. Git clone the repository
+```bash
 git clone https://github.com/champion19/C-santigo.git
+```
 
-## Installling C
+2. Install your preference IDE
+Example:
+ - [Visual Studio Code](https://code.visualstudio.com/download)
+ - [Sublime Test](https://www.sublimetext.com/3)
+ - [Intellij Idea](https://www.jetbrains.com/idea/download/?section=mac)
 
-In order to install and use C language,go to https://sublimetext.com/3, since we are goint to use gcc, select your opertaing system, OS X for mac ,Windows,Windows64,Ubuntu etc
+ 3. Open this project into your preference IDE
+ ```bash
+  cd C-santigo
+  ```
 
-## Installing C using Windows
+  4. Install dependencies
+  - Go to [Download Compiler](https://sourceforge.net/projects/mingw/)
+  - Hit clic **Download** button.
+  - Set in dowloads section , execute it and hit **install** button.
+  - Go to All the packages, select from package  **"mingw32.gcc"**.
+     - ```mingw32-gcc bin```
+     - ```mingw32-gcc dev```
+     - ```mingw32-gcc doc```
+     - ```mingw32-gcc lang```
+     - ```mingw32-gcc info```
+     - ```mingw32-gcc lic```
+  - Go to **install section** on top right.
+  - Select **Apply changes**,hit **Apply**.
+  - The main program should be in the local disk(C:) in the folder bin with the name **mingw32-gc**.
 
-Go to www.mingw.org , select download installer,that activates the sourceforge instantly ,once it's done dowmñoading and set in downloads,hit it and push the button install,next the button continue,if you decide to reinstall it, it takes some tine.
-
-Go to All the packages and select of package  mingw32.gcc,the classes bin,dev,doc,lang ,info and lic then go to install section on top right and select Apply changes,hit Apply and wait for a couple of minutes.
-
-The main program should be in the local disk(C:) in the folder bin with the name mingw32-gc.
 ## Adding commands
-Type cmd in order to access the local variables, if the program doesn´t recognize the command gcc,you should go to this device, access properties, hit advanced configuration of the system, environment variables,look for "path",hit edit,if you have windows 10 the route appears "C:\MinGW\bin", if you have other versions of windows,the same route should have a semicolon before or after writting it;hit accept three times,restart your terminal and try again.
-
+- Go to **"this device"**
+- Hit **right click** on the mouse  and hit **"properties"**.
+- hit **"advanced configuration of the system"**.
+- acces **"environment variables"**.
+- look for **"path"**.
+- hit **"edit"**,if you have windows 10 the route appears "C:\MinGW\bin", if you have other versions of windows,the same route should have a semicolon before or after writting it.
+- hit **"accept"** three times.
+- restart your terminal and type **"gcc"**.
 
 ## say hello world
 
-open your favorite idle ,sublime text or visual studio code,add new project or folder, create a new file and type helloworld.c in the powershell
+- Open your favorite idle, sublime text or visual studio code.
+- Add new project or folder.
+- Create a new file and type helloworld.c in the powershell.
 
 ## Important lines in every file
-
-we are going to be using these lines so many times
-"##include <stdio.h>" then write the function main() with {}, inside the brackets always type "return 0;" like this:
+```
 ##include<stdio.h>
 int main()
 {
 printf("Hola Mundo");
 return 0;
 }
-the main function is essential,every program in C starts its execution inside it.
-if you want to print a line of characters use, printf("");
-if you want to read formated data from the entrance and storage them in variables or obtain data entered  by the user,you can use scanf("",&);
-if you want to see it from the terminal, locate your folder and hit ls in a Mac,to list your files;if you have windows, use dir.
-In order to enter to your directory using windows use cd, it stands for "change directory"
+```
+
+- The **"main function"** of  every program in C ,starts its execution inside the parenthesis.
+- **"printf("")":**  To print a line of characters, formated data,messagess or the value of the variables in the console.
+- **"scanf("",&)":** To read formated data from the entrance and storage them in variables or obtain data entered  by the user.
+- In order to see it from the terminal, locate your folder and hit **ls** in a Mac,to list your files;if you have windows, use **dir**.
+- In order to enter to your directory using windows use cd, it stands for "change directory"
 
 ## Compile and execute files in MacOS
 
-In order to run files with c you must compile and save them, use this command in the powershell " gcc filename.c -o filename.out"(any name that you desire) and hit enter.
-then type "./filename.out", the name you entered before, filename.out
+In order to run files with C you must:
+- Compile and save them, use this command in the powershell " gcc filename.c -o filename.out"(any name that you desire) and hit enter.
+- Type "./filename.out", the name you entered before, filename.out
 
-## execute and compile files in windows
-if you want to run a file with c use this command gcc filename.c filename.exe
-in order to run it, use gcc filename.exe
-
-
-
+## Execute and compile files in windows
+- To run a file with c use this command, gcc filename.c filename.exe
+- To run it, use gcc filename.exe
